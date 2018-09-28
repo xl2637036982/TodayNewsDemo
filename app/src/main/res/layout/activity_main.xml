@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.administrator.todaynewsdemo.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#D33C3D"
+        android:orientation="horizontal">
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="5"
+            android:background="@drawable/edit"
+            android:hint="搜你想搜的" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/menu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:paddingTop="0dp"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/camera" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="发布"
+                android:textColor="#faf3f3"
+                android:textSize="12dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tl_tab"
+            android:layout_weight="0.15"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            app:tabGravity="center"
+            app:tabIndicatorColor="@null"
+            app:tabIndicatorHeight="0dp"
+            app:tabMaxWidth="200dp"
+            app:tabMinWidth="20dp"
+            app:tabMode="scrollable"
+            app:tabPaddingEnd="8dp"
+            app:tabPaddingStart="12dp"
+            app:tabSelectedTextColor="@color/colorPrimary"
+            app:tabTextColor="#100a0a"
+            android:background="@drawable/border"/>
+        <Button
+            android:id="@+id/plus"
+            android:paddingTop="10dp"
+            android:drawableTop="@mipmap/plus1"
+            android:background="@drawable/border"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+    </LinearLayout>
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9" />
+
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#ddd"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/headline"
+            style="@style/RB"
+            android:drawableTop="@drawable/picturetouch1"
+            android:text="首页" />
+
+        <RadioButton
+            android:id="@+id/watermelon"
+            style="@style/RB"
+            android:drawableTop="@drawable/picturetouch2"
+            android:text="西瓜视频" />
+
+        <RadioButton
+            android:id="@+id/wei_headline"
+            style="@style/RB"
+            android:drawableTop="@drawable/picturetouch3"
+            android:text="微头条" />
+
+        <RadioButton
+            android:id="@+id/video"
+            style="@style/RB"
+            android:drawableTop="@drawable/picturetouch4"
+            android:text="小视频" />
+
+        <RadioButton
+            android:id="@+id/my"
+            style="@style/RB"
+            android:drawableTop="@drawable/picturetouch5"
+            android:text="我的" />
+
+    </RadioGroup>
+
+</LinearLayout>

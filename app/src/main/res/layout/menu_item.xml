@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/edit">
+
+    <Button
+        android:textColor="#292929"
+        android:paddingLeft="10dp"
+        android:background="@null"
+        android:id="@+id/menu_btn1"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:drawableLeft="@mipmap/one"
+        android:text="发图文"
+        />
+    <Button
+        android:textColor="#292929"
+        android:paddingLeft="10dp"
+        android:background="@null"
+        android:id="@+id/menu_btn2"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:drawableLeft="@mipmap/two"
+        android:text="拍小视频"
+        />
+    <Button
+        android:textColor="#292929"
+        android:paddingLeft="10dp"
+        android:background="@null"
+        android:id="@+id/menu_btn3"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:drawableLeft="@mipmap/three"
+        android:text="上传视频"
+        />
+    <Button
+        android:textColor="#292929"
+        android:paddingLeft="10dp"
+        android:background="@null"
+        android:id="@+id/menu_btn4"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:drawableLeft="@mipmap/four"
+        android:text="提问"
+        />
+</LinearLayout>
